@@ -1,0 +1,11 @@
+For this process, I first make the catkin package with the required ros module sensor_msgs and cv_bridge in order to work between ros and openCV.
+Then in the python files, I import them.
+In the subcriber file, I made the subscriber node and topic through which data will be passed and also make the bridge object.
+Using the cv functions I connect with the system's camera and store the image in NumPy format. 
+I grayscale that image using the built-in function and pass it to the .Canny functions (along with standard lower and upper threshold for hysteresis proedure) which performs the Canny edge detection.
+The canny function gives us the Binar edge image which now I convert into a ROS message using the bridge object and publish the same.
+I release the camera when the user quits.
+
+For the subscriber, I create the subscriber node and when some message comes in the topic, I call a function to output.
+The function first makes bridge object and re-converts the ros message into cv2 type image. them the cv2.imshow function displays the edge images on the screen.
+Finally, after all tasks are done, I kill all the windows using the built-in function.

@@ -1,0 +1,4 @@
+For this question I simply imported the cv module and with standard built-in functions, I connected to the device's camera.
+If the camera is open, then I read a frame from the camera and keep the data in a boolean value and captured image in NumPy array format.
+If frame is read successfully, I display the window in a small frame. 
+If user presses q, I end the display and connection and kill all windows.
