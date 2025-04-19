@@ -1,0 +1,17 @@
+# ROS workspace generated files
+build/
+devel/
+install/
+
+# Compiled files
+*.o
+*.pyc
+
+# IDE files
+.vscode/
+.idea/
+
+# Other
+*.swp
+*~
+.DS_Store
