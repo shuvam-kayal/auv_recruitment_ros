@@ -1,0 +1,2 @@
+task1_q1:task1_q2:task1_q3
+-DCATKIN_DEVEL_PREFIX=/home/shuvam/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/shuvam/catkin_ws/install -G Unix Makefiles

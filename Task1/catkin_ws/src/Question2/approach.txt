@@ -1,0 +1,6 @@
+First I made the required package and scripts folder.
+Then I kept the 3 python files in the scripts folder, in which one file acts as the original publisher and publishes the original number to a topic, the second one takes the original number and passes to a new topic, and the third file prints the number after doing the last operation. 
+Basically created the nodes in each files, then 2 common topics and published it and subscribed it accordingly.
+I used the ros.rate(), ros.sleep() and ros.spin() functions to keep the other running.
+
+I didn't face many problems, just understanding of the rate(), sleep() and spin() took some time.

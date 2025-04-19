@@ -1,0 +1,8 @@
+First I made the required package(using ros's message_generation tool) and scripts folder, and the python files in these scripts.
+In commander file I simply made a publisher function and published the command(if valid) to a topic.
+The subcriber listens to the command and and calls a function that determines the final direction(using state machine transitions) and calculates the final position of the bot.
+Then the function calls another function puts the data into custom message bot_pose and prints the positiona nd direction, along with publishing the custom message.
+
+
+The problem I faced was with creating the custom message that required making some extra modules, and quite a number of tweaks in the CMakeLists.txt and the .xml file to process and convert the custom message into python understandable.
+Other than that the state machine wasn't very hard, just required some mapping using python dictionaries.

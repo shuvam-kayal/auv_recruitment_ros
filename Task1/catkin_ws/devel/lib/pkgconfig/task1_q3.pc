@@ -1,0 +1,8 @@
+prefix=/home/shuvam/catkin_ws/devel
+
+Name: task1_q3
+Description: Description of task1_q3
+Version: 0.0.0
+Cflags: -I/home/shuvam/catkin_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: 

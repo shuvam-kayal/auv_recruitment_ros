@@ -1,0 +1,9 @@
+First I made the required package and scripts folder.
+Then I kept the python file in the scripts folder, and made a class to write the main functions.
+Basically created the common node, common topic and published it and subscribed it.
+The subscriber called a function that would print the chat message from the other person.
+I made a run() function that would take string input from user and publish a formated version of the same to the common topic indefinitely until ctrl + c is pressed.
+The entry point check takes the username as input and makes the object of the class passing the usename. Then it calls and run function.
+
+The main problem I faced is to stop the echo of my users messages dislaying double times in users terminal.
+
